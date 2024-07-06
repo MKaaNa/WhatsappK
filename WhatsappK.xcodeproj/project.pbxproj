@@ -11,15 +11,23 @@
 		95F675572C39C01700943857 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F675562C39C01700943857 /* ContentView.swift */; };
 		95F675592C39C01800943857 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95F675582C39C01800943857 /* Assets.xcassets */; };
 		95F6755D2C39C01800943857 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95F6755C2C39C01800943857 /* Preview Assets.xcassets */; };
+		95F675642C39C02C00943857 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95F675632C39C02C00943857 /* GoogleService-Info.plist */; };
+		95F675672C39C05900943857 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 95F675662C39C05900943857 /* FirebaseAnalytics */; };
+		95F675692C39C05900943857 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 95F675682C39C05900943857 /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		D1ACBBC2EA28C9DD4EB9A35A /* Pods_WhatsappK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9F2357283BA4BF92D24B448 /* Pods_WhatsappK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		019C4AD134E6998747427798 /* Pods-WhatsappK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatsappK.debug.xcconfig"; path = "Target Support Files/Pods-WhatsappK/Pods-WhatsappK.debug.xcconfig"; sourceTree = "<group>"; };
+		294C2DF8454AA4FF2426C280 /* Pods-WhatsappK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatsappK.release.xcconfig"; path = "Target Support Files/Pods-WhatsappK/Pods-WhatsappK.release.xcconfig"; sourceTree = "<group>"; };
 		95F675512C39C01700943857 /* WhatsappK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatsappK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95F675542C39C01700943857 /* WhatsappKApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsappKApp.swift; sourceTree = "<group>"; };
 		95F675562C39C01700943857 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		95F675582C39C01800943857 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95F6755A2C39C01800943857 /* WhatsappK.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WhatsappK.entitlements; sourceTree = "<group>"; };
 		95F6755C2C39C01800943857 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		95F675632C39C02C00943857 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B9F2357283BA4BF92D24B448 /* Pods_WhatsappK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatsappK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95F675672C39C05900943857 /* FirebaseAnalytics in Frameworks */,
+				95F675692C39C05900943857 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				D1ACBBC2EA28C9DD4EB9A35A /* Pods_WhatsappK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8BC5A7A2291BA8923BECF6BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9F2357283BA4BF92D24B448 /* Pods_WhatsappK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		95F675482C39C01700943857 = {
 			isa = PBXGroup;
 			children = (
 				95F675532C39C01700943857 /* WhatsappK */,
 				95F675522C39C01700943857 /* Products */,
+				C372AF28DD060E6018B5D474 /* Pods */,
+				8BC5A7A2291BA8923BECF6BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +76,7 @@
 				95F675542C39C01700943857 /* WhatsappKApp.swift */,
 				95F675562C39C01700943857 /* ContentView.swift */,
 				95F675582C39C01800943857 /* Assets.xcassets */,
+				95F675632C39C02C00943857 /* GoogleService-Info.plist */,
 				95F6755A2C39C01800943857 /* WhatsappK.entitlements */,
 				95F6755B2C39C01800943857 /* Preview Content */,
 			);
@@ -69,6 +91,16 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		C372AF28DD060E6018B5D474 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				019C4AD134E6998747427798 /* Pods-WhatsappK.debug.xcconfig */,
+				294C2DF8454AA4FF2426C280 /* Pods-WhatsappK.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,15 +108,21 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 95F675602C39C01800943857 /* Build configuration list for PBXNativeTarget "WhatsappK" */;
 			buildPhases = (
+				220AF541AC3FCD5778960E33 /* [CP] Check Pods Manifest.lock */,
 				95F6754D2C39C01700943857 /* Sources */,
 				95F6754E2C39C01700943857 /* Frameworks */,
 				95F6754F2C39C01700943857 /* Resources */,
+				A604622311B4E5F81CAFF731 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = WhatsappK;
+			packageProductDependencies = (
+				95F675662C39C05900943857 /* FirebaseAnalytics */,
+				95F675682C39C05900943857 /* FirebaseAnalyticsWithoutAdIdSupport */,
+			);
 			productName = WhatsappK;
 			productReference = 95F675512C39C01700943857 /* WhatsappK.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +151,9 @@
 				Base,
 			);
 			mainGroup = 95F675482C39C01700943857;
+			packageReferences = (
+				95F675652C39C05900943857 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 95F675522C39C01700943857 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -129,10 +170,53 @@
 			files = (
 				95F6755D2C39C01800943857 /* Preview Assets.xcassets in Resources */,
 				95F675592C39C01800943857 /* Assets.xcassets in Resources */,
+				95F675642C39C02C00943857 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		220AF541AC3FCD5778960E33 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WhatsappK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A604622311B4E5F81CAFF731 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WhatsappK/Pods-WhatsappK-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WhatsappK/Pods-WhatsappK-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WhatsappK/Pods-WhatsappK-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		95F6754D2C39C01700943857 /* Sources */ = {
@@ -263,6 +347,7 @@
 		};
 		95F675612C39C01800943857 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 019C4AD134E6998747427798 /* Pods-WhatsappK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +386,7 @@
 		};
 		95F675622C39C01800943857 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 294C2DF8454AA4FF2426C280 /* Pods-WhatsappK.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -359,6 +445,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		95F675652C39C05900943857 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.28.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		95F675662C39C05900943857 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 95F675652C39C05900943857 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		95F675682C39C05900943857 /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 95F675652C39C05900943857 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 95F675492C39C01700943857 /* Project object */;
 }
